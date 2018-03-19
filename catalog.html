@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Девайс</title>
+  </head>
+  <body>
+    <h1 class="visualy-hidden">Каталог интернет-магазина Device</h1>
+    <!-- Хэдер -->
+    <header class="main-header">
+      
+      <nav class="main-header-main-navigation">
+        <!-- Logo -->
+        <a class="ain-header-main-navigation-logo">
+          <img src="img/logo.svg" width="x" height="x" alt="Логотип «Device»">
+        </a>
+        <!-- Главная навигация -->
+        <ul class="main-header-main-navigation-list">
+          <li><a href="#">Каталог товаров</a>
+            <ul class="main-catalog">
+                <li>
+                  <a href="#">Виртуальная реальность</a>
+                </li>
+                <li>
+                  <a href="#">Фитнес-браслеты</a>
+                </li>
+                <li>
+                  <a href="#">Квадрокоптеры</a>
+                </li>
+                <li>
+                  <a href="#">Моноподы для селфи</a>
+                </li>
+                <li>
+                  <a href="#">Умные часы</a>
+                </li>
+                <li>
+                  <a href="#">Экшн-камеры</a>
+                </li>
+              </ul>
+            </li>
+          <li><a href="#">Доставка</a></li>
+          <li><a href="#">Гарантии</a></li>
+          <li><a href="#">Контакты</a></li>
+        </ul>
+        <!-- Кнопка "войти" -->
+        <ul class="main-header-main-navigation-login">
+          <li class="login-link">Войти</li>
+        </ul>
+        <!-- Кнопки "сравнить" и "корзина" -->
+        <ul class="main-header-main-navigation-cart">
+          <li><a href="#">Сравнить</a></li>
+          <li><a href="#">Корзина</a></li>
+        </ul>
+        <!-- Поиск -->
+        <input type="text" class="main-header-main-navigation-search">
+      </nav>
+    </header>
+    <main>
+        <section class="way">
+            <h2>Моноподы для селфи</h2>
+            <ul class="way-list">
+                <li><a href="#">Главная</a></li>
+                <li><a href="#">Каталог товаров</a></li>
+                <li><a href="#">Моноподы для селфи</a></li>
+            </ul>
+        </section>
+        <div class="sort">
+            <p><b>Сортировка:</b></p>
+            <ul class="sort-list">
+                <li class="sort-list-item"><a href="#">По цене</a></li>
+                <li class="sort-list-item"><a href="#">По типу</a></li>
+                <li class="sort-list-item"><a href="#">По популярности</a></li>
+            </ul>
+            <a href="#">От большего к меньшему</a>
+            <a href="#">От меньшего к большему</a>
+        </div>
+        <form class="filter">
+            <p><b>Фильтр:</b></p>
+            <input type="range" name="Price range">
+            <ul>
+                <li>
+                    <label for="black">Черный</label>
+                    <input type="checkbox" name="black" id="black">
+                </li>
+                <li>
+                    <label for="white">Белый</label>
+                    <input type="checkbox" name="white" id="white">
+                </li>
+                <li>
+                    <label for="blue">Синий</label>
+                    <input type="checkbox" name="blue" id="blue">
+                </li>
+                <li>
+                    <label for="red">Красный</label>
+                    <input type="checkbox" name="red" id="red">
+                </li>
+                <li>
+                    <label for=""></label>
+                    <input type="checkbox" name="" id="">
+                </li>
+            </ul>
+        </form>
+    </main>
+    </body>
+
+    </html>

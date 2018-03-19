@@ -5,6 +5,8 @@
     <title>HTML Academy: Девайс</title>
   </head>
   <body>
+    <h1 class="visualy-hidden">Device - интернет-магазин крутых гаджетов и смежной продукции</h1>
+    <!-- Хэдер -->
     <header class="main-header">
       
       <nav class="main-header-main-navigation">
@@ -57,6 +59,7 @@
     <main class="main-field">
       <!-- Слайдер -->
       <section class="main-field-slider">
+          <h2 class="visualy-hidden">Популярные товары</h2>
           <input name="slider-1-radio" type="radio">
           <input name="slider-2-radio" type="radio">
           <input name="slider-3-radio" type="radio">
@@ -114,6 +117,7 @@
       </section>
       <!-- Каталожные иконки под слайдером -->
       <section class="main-field-catalog-items">
+        <h2 class="visualy-hidden">Категории товаров</h2>
         <ul class="main-field-catalog-items-list">
             <li>
                 <a href="#">
@@ -149,6 +153,7 @@
       </section>
       <!-- Доставка гарантия кредит -->
       <section class="main-field-services">
+          <h2 class="visualy-hidden">Услуги</h2>
           <input name="services-1-radio" type="radio" id="delivery"><label for="delivery">Доставка</label>
           <input name="services-2-radio" type="radio" id="guarantees"><label for="guarantees">Гарантии</label>
           <input name="services-3-radio" type="radio" id="credit"><label for="credit">Кредит</label>
@@ -170,6 +175,7 @@
       </section>
       <!-- Партнеры -->
       <section class="main-field-partners">
+        <h2 class="visualy-hidden">Партнеры</h2>
         <div class="main-field-partners-1">
             <img src="img/partner-1.svg" width="x" height="x" alt="Партнер-1">
         </div>
@@ -185,6 +191,7 @@
       </section>
       <!-- О нас -->
       <section class="main-field-info">
+        <h2 class="visualy-hidden">О нас</h2>
         <p><b>О нас</b></p>
         <p>Огромный выбор гаджетовне оставит равнодушным гика, который есть в каждом из нас</p>
         <p>Мы можем доставить ваш товар в самые отдаленные точки России! DEVICE работает о многими транспортными компаниями.</p>
@@ -197,6 +204,7 @@
       </section>
       <!-- Контакты -->
       <section class="main-field-contacts">
+        <h2 class="visualy-hidden">Контакты</h2>
         <p><b>Контакты</b></p>
         <p>Вы можетезабрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.</p>
         <img src="img/map.svg" width="x" height="x" alt="Карта проезда">
@@ -222,5 +230,26 @@
         <a href="#">Инстаграм</a>
         <a href="#">Твиттер</a>
       </footer>
+      <div class="write-us-popup">
+        <h2 class="visualy-hidden">Напишите нам</h2>
+        <form method="POST" action="https://echo.htmlacademy.ru">
+
+          <label for="name">Ваше имя:</label>
+          <input type="text" name="Name" id="name" placeholder="Имя Фамилия">
+
+          <label for="email">Ваш e-mail:</label>
+          <input type="email" name="E-mail" id="email" placeholder="email@example.com">
+
+          <label for="content">Текст письма:</label>
+          <input type="text" name="Content" id="content" placeholder="В свободной форме">
+          
+          <input type="submit" value="Отправить">
+        </form> 
+      </div>
+      <div class="map-popup">
+          <h2 class="visualy-hidden">Где мы находимся</h2>
+          <img src="img/full-map.svg" alt="Город Москва, улица Строителей, дом 15">
+      </div>
     </body>
+
 </html>
