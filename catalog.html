@@ -56,6 +56,7 @@
       </nav>
     </header>
     <main>
+        <!-- Хлебные крошки -->
         <section class="way">
             <h2>Моноподы для селфи</h2>
             <ul class="way-list">
@@ -64,6 +65,7 @@
                 <li><a href="#">Моноподы для селфи</a></li>
             </ul>
         </section>
+        <!-- Сортировка по цене типу и популярности -->
         <div class="sort">
             <p><b>Сортировка:</b></p>
             <ul class="sort-list">
@@ -74,7 +76,8 @@
             <a href="#">От большего к меньшему</a>
             <a href="#">От меньшего к большему</a>
         </div>
-        <form class="filter">
+        <!-- Форма фильтра -->
+        <form class="filter" method="POST" action="https://echo.htmlacademy.ru">
             <p><b>Фильтр:</b></p>
             <input type="range" name="Price range">
             <ul>
@@ -95,12 +98,60 @@
                     <input type="checkbox" name="red" id="red">
                 </li>
                 <li>
-                    <label for=""></label>
-                    <input type="checkbox" name="" id="">
+                    <label for="pink">Розовый</label>
+                    <input type="checkbox" name="pink" id="pink">
                 </li>
             </ul>
+            <p><b>Bluetooth</b></p>
+            <input type="radio" name="Bluetooth" id="bt" value="Yes">
+            <input type="radio" name="Bluetooth" id="bt" value="No">
+
+            <input type="submit" value="Показать">
         </form>
+        <!-- Каталог товаров -->
+        <ul>
+            <li>
+                <img src="img/porduct-1.svg" alt="Любительская селфи-палка">
+                <p>Любительская селфи-палка</p>
+                <p>500 руб.</p>
+            </li>
+            <li>
+                <img src="img/porduct-2.svg" alt="Профессиональная селфи-палка">
+                <p>Профессиональная селфи-палка</p>
+                <p>1500 руб.</p>
+            </li>
+            <li>
+                <img src="img/porduct-3.svg" alt="Непотопляемая селфи-палка">
+                <p>Непотопляемая селфи-палка</p>
+                <p>2500 руб.</p>
+            </li>
+            <li>
+                <img src="img/porduct-4.svg" alt="Селфи-палка «Следуй за мной»">
+                <p>Селфи-палка «Следуй за мной</p>
+                <p>4900 руб.</p>
+            </li>
+        </ul>
     </main>
+     <!-- Футер -->
+     <footer class="page-footer">
+            <a href="#"><img src="img/logo.svg" width="x" height="x" alt="DEVICE logo"></a>
+            <p>г.Москва, ул. Строителей, 15</p>
+            <div class="page-footer-services">
+                <a href="#">Доставка</a>
+                <a href="#">Гарантия</a>
+                <a href="#">Контакты</a>
+              </div>
+              <ul class="pafe-footer-navigation">
+                <li><a href="#">Валентин Петухов</a></li>
+                <li><a href="#">Выйти</a></li>
+                <li><a href="#">Сравнить</a></li>
+                <li><a href="#">Корзина</a></li>
+              </ul>
+              <p>Тел.: +7(495)495-95-95</p>
+              <a href="#">Фейсбук</a>
+              <a href="#">Инстаграм</a>
+              <a href="#">Твиттер</a>
+            </footer>
     </body>
 
     </html>
