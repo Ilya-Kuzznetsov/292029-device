@@ -3,21 +3,25 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Девайс</title>
+    <link rel="stylesheet" href="css/normolize.css">
+    <link rel="stylesheet" href="css/main.css">
   </head>
   <body>
-    <h1 class="visualy-hidden">Device - интернет-магазин крутых гаджетов и смежной продукции</h1>
+    <div class="main-wrapper">
+    <h1 class="visually-hidden">Device - интернет-магазин крутых гаджетов и смежной продукции</h1>
 <!-- Хэдер -->
     <header class="main-header">
       
       <nav class="main-header-main-navigation">
 <!-- Logo -->
-        <a class="ain-header-main-navigation-logo" href="#">
+        <a class="main-header-main-navigation-logo" href="#">
           <img src="img/logo.png" width="164" height="36" alt="Логотип «Device»">
         </a>
 <!-- Главная навигация -->
         <ul class="main-header-main-navigation-list">
           <li><a href="#">Каталог товаров</a>
             <ul class="main-catalog">
+              <div class="main-catalog-flex">
                 <li>
                   <a href="#">Виртуальная реальность</a>
                 </li>
@@ -36,6 +40,7 @@
                 <li>
                   <a href="#">Экшн-камеры</a>
                 </li>
+                </div>
               </ul>
             </li>
           <li><a href="#">Доставка</a></li>
@@ -44,10 +49,7 @@
         </ul>
 <!-- Кнопка "войти" -->
         <ul class="main-header-main-navigation-login">
-            <li class="login-link"><a href="#">Войти</a></li>
-        </ul>
-<!-- Кнопки "сравнить" и "корзина" -->
-        <ul class="main-header-main-navigation-cart">
+          <li class="login-link"><a href="#">Войти</a></li>
           <li><a href="#">Сравнить</a></li>
           <li><a href="#">Корзина</a></li>
         </ul>
@@ -59,7 +61,7 @@
     <main class="main-field">
 <!-- Слайдер -->
       <section class="main-field-slider">
-          <h2 class="visualy-hidden">Популярные товары</h2>
+          <h2 class="visually-hidden">Популярные товары</h2>
           <input name="slider-1-radio" type="radio">
           <input name="slider-2-radio" type="radio">
           <input name="slider-3-radio" type="radio">
@@ -117,7 +119,7 @@
       </section>
 <!-- Каталожные иконки под слайдером -->
       <section class="main-field-catalog-items">
-        <h2 class="visualy-hidden">Категории товаров</h2>
+        <h2 class="visually-hidden">Категории товаров</h2>
         <ul class="main-field-catalog-items-list">
             <li>
                 <a href="#">
@@ -147,7 +149,7 @@
       </section>
 <!-- Доставка гарантия кредит -->
       <section class="main-field-services">
-          <h2 class="visualy-hidden">Услуги</h2>
+          <h2 class="visually-hidden">Услуги</h2>
           <input name="services-1-radio" type="radio" id="delivery"><label for="delivery">Доставка</label>
           <input name="services-2-radio" type="radio" id="guarantees"><label for="guarantees">Гарантии</label>
           <input name="services-3-radio" type="radio" id="credit"><label for="credit">Кредит</label>
@@ -169,7 +171,7 @@
       </section>
 <!-- Партнеры -->
       <section class="main-field-partners">
-        <h2 class="visualy-hidden">Партнеры</h2>
+        <h2 class="visually-hidden">Партнеры</h2>
         <div class="main-field-partners-1">
             <img src="img/partner-1.png" width="260" height="100" alt="Партнер-1">
         </div>
@@ -185,7 +187,7 @@
       </section>
 <!-- О нас -->
       <section class="main-field-info">
-        <h2 class="visualy-hidden">О нас</h2>
+        <h2 class="visually-hidden">О нас</h2>
         <p><b>О нас</b></p>
         <p>Огромный выбор гаджетовне оставит равнодушным гика, который есть в каждом из нас</p>
         <p>Мы можем доставить ваш товар в самые отдаленные точки России! DEVICE работает о многими транспортными компаниями.</p>
@@ -198,7 +200,7 @@
       </section>
 <!-- Контакты -->
       <section class="main-field-contacts">
-        <h2 class="visualy-hidden">Контакты</h2>
+        <h2 class="visually-hidden">Контакты</h2>
         <p><b>Контакты</b></p>
         <p>Вы можетезабрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.</p>
         <img src="img/map.png" width="560" height="222" alt="Город Москва, улица Строителей, дом 15">
@@ -225,9 +227,10 @@
         <a href="#">Твиттер</a>
         <a href="https://htmlacademy.ru/"><img src="img/html-academy-logo.png" alt="Html академия"></a>
       </footer>
+      </div>
 <!-- Попапы -->
       <div class="write-us-popup">
-        <h2 class="visualy-hidden">Напишите нам</h2>
+        <h2 class="visually-hidden">Напишите нам</h2>
         <form method="POST" action="https://echo.htmlacademy.ru">
 
           <label for="name">Ваше имя:</label>
@@ -243,7 +246,7 @@
         </form> 
       </div>
       <div class="map-popup">
-          <h2 class="visualy-hidden">Где мы находимся</h2>
+          <h2 class="visually-hidden">Где мы находимся</h2>
           <img src="img/full-map.png" alt="Город Москва, улица Строителей, дом 15">
       </div>
     </body>
