@@ -20,6 +20,10 @@ ul {
     width: 100%;
     height: 317px;
     margin-top: 40px;
+    padding: 0;
+}
+.main-header-main-navigation{
+    padding:0;
 }
 .main-header-main-navigation-logo{
     display: block;
@@ -30,24 +34,25 @@ ul {
 }
 .main-header-main-navigation-list{
     display: flex;
-    margin-left: 60px;
+    position: relative;
+    margin-left: 20px;
     justify-content: space-between;
     font-size: 18px;
     line-height: 24px;
-    font-family: "Gilroy", sans-serif;
+    font-family: "Gilroy ExtraBold", sans-serif;
     text-transform: uppercase;
 }
-.main-header-main-navigation-list li:nth-child(1){
+.main-catalog-flexitem1{
     margin-right: 295px;
     width: 210px;
 }
-.main-header-main-navigation-list li:nth-child(2){
+.main-catalog-flexitem2{
     margin-right: 38px;
 }
-.main-header-main-navigation-list li:nth-child(3){
+.main-catalog-flexitem3{
     margin-right: 115px;
 }
-.main-header-main-navigation-list li:nth-child(4){
+.main-catalog-flexitem4{
     margin-right: 60px;
 }
 .main-header-main-navigation-login{
@@ -55,16 +60,11 @@ ul {
     margin-left: 600px;
     justify-content: space-between;
 }
-.main-catalog li{
-    margin: 0;
-    width: auto;
-}
 .main-catalog{
     display: none;
     font-family: "Myriad Pro", sans-serif;
     font-size: 15px;
     text-transform: none;
-
 }
 
 .main-header-main-navigation-list >li:hover > .main-catalog{
@@ -75,7 +75,7 @@ ul {
     flex-wrap: wrap;
     width: 550px;
     margin-left: -39px;
-    justify-content: baseline;
+    justify-content: flex-start;
     align-content: space-between;
 
 }
