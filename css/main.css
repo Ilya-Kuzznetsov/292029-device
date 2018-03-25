@@ -70,6 +70,9 @@ ul {
 .main-header-main-navigation-list >li:hover > .main-catalog{
     display: block;
 }
+.main-header-main-navigation-list >li:focus > .main-catalog{
+    display: block;
+}
 .main-catalog-flex{
     display: flex;
     flex-wrap: wrap;

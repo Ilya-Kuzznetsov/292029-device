@@ -21,7 +21,6 @@
         <ul class="main-header-main-navigation-list">
           <li class="main-catalog-flexitem1"><a href="#">Каталог товаров</a>
             <ul class="main-catalog">
-              <div class="main-catalog-flex">
                 <li>
                   <a href="#">Виртуальная реальность</a>
                 </li>
@@ -40,7 +39,6 @@
                 <li>
                   <a href="#">Экшн-камеры</a>
                 </li>
-                </div>
               </ul>
             </li>
           <li class="main-catalog-flexitem2"><a href="#">Доставка</a></li>
@@ -54,7 +52,11 @@
           <li><a href="#">Корзина</a></li>
         </ul>
 <!-- Поиск -->
-        <input type="text" class="main-header-main-navigation-search">
+      <form method="get" action="http://echo.htmlacademy.ru">
+         <label class="visually-hidden" for="search">Поиск по сайту</label>
+         <input type="search" id="search" placeholder="Поиск по сайту">
+         <button type="submit">Найти</button>
+       </form>
       </nav>
     </header>
 
@@ -101,7 +103,7 @@
         </div>
 <!-- Слайдер 3 -->
         <div class="main-field-slider-3">
-            <img src="img/slider-3.png" width="526" height="334" alt="Слайдер 3">
+            <img src="img/slider-3.png" width="526" height="334" alt="Крутой квадрокоптер">
             <p>Порхает как бабочка, жалит как пчела!</p>
             <p>Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.</p>
             <a href="#">Подробнее</a>
@@ -150,39 +152,36 @@
 <!-- Доставка гарантия кредит -->
       <section class="main-field-services">
           <h2 class="visually-hidden">Услуги</h2>
-          <input name="services-1-radio" type="radio" id="delivery"><label for="delivery">Доставка</label>
-          <input name="services-2-radio" type="radio" id="guarantees"><label for="guarantees">Гарантии</label>
-          <input name="services-3-radio" type="radio" id="credit"><label for="credit">Кредит</label>
-          <div class="main-field--services-1">
-              <p><b>Доставка</b></p>
+          <input name="services-1-radio" type="radio" id="delivery"> <label for="delivery">Доставка</label>
+          <input name="services-2-radio" type="radio" id="guarantees"> <label for="guarantees">Гарантии</label>
+          <input name="services-3-radio" type="radio" id="credit" ><label for="credit">Кредит</label>
+          <section class="main-field--services-1">
+              <h2>Доставка</h3>
               <p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно!Ведь мы неплохозаработаем, поднимая его на ваш этаж.</p>
-              <a href="#">Подробнее</a>
-          </div>
-          <div class="main-field--services-2">
-              <p><b>Гарантия</b></p>
+          </section>>
+          <section class="main-field--services-2">
+              <h2>Гарантия</h3>
               <p>Если из-за возгорания купленного у нас товара у вас сгорит дом - не переживайте, мы выддаим вам новый. Товар, не дом, конечно же.</p>
-              <a href="#">Подробнее</a>
-          </div>
-          <div class="main-field--services-3">
-              <p><b>Кредит</b></p>
+          </section>
+          <section class="main-field--services-3">
+              <h2>Кредит</h3>
               <p>Залезть в долговую яму стало проще! редитные консультанты подберут для вас наиболее выгодные условия кредита. Выгодные для нашего банка, разумеется.</p>
-              <a href="#">Подробнее</a>>
-          </div>
+          </section>
       </section>
 <!-- Партнеры -->
       <section class="main-field-partners">
         <h2 class="visually-hidden">Партнеры</h2>
         <div class="main-field-partners-1">
-            <img src="img/partner-1.png" width="260" height="100" alt="Партнер-1">
+            <img src="img/partner-1.png" width="260" height="100" alt="Партнер Dji">
         </div>
         <div class="main-field-partners-2">
-            <img src="img/partner-2.png" width="260" height="100" alt="Партнер-2">
+            <img src="img/partner-2.png" width="260" height="100" alt="Партнер SP Gadgets">
         </div>
         <div class="main-field-partners-3">
-            <img src="img/partner-3.png" width="260" height="100" alt="Партнер-3">
+            <img src="img/partner-3.png" width="260" height="100" alt="Партнер GoPro">
         </div>
         <div class="main-field-partners-4">
-            <img src="img/partner-4.png" width="260" height="100" alt="Партнер-4">
+            <img src="img/partner-4.png" width="260" height="100" alt="Партнер Vive">
         </div>
       </section>
 <!-- О нас -->
@@ -209,13 +208,13 @@
     </main>
 <!-- Футер -->
     <footer class="page-footer">
-      <a href="#"><img src="img/logo.png" width="164" height="36" alt="DEVICE logo"></a>
+      <a href="#"><img src="img/logo.png" width="164" height="36" alt="Логотип Device"></a>
       <p>г.Москва, ул. Строителей, 15</p>
-      <div class="page-footer-services">
-          <a href="#">Доставка</a>
-          <a href="#">Гарантия</a>
-          <a href="#">Контакты</a>
-        </div>
+      <ul class="page-footer-services">
+          <li><a href="#">Доставка</a></li>
+          <li><a href="#">Гарантия</a></li>
+          <li><a href="#">Контакты</a></li>
+      </ul>
         <ul class="pafe-footer-navigation">
           <li><a href="#">Войти</a></li>
           <li><a href="#">Сравнить</a></li>
@@ -243,11 +242,13 @@
           <input type="text" name="Content" id="content" placeholder="В свободной форме">
           
           <input type="submit" value="Отправить">
+          <button type="button" name="close-write-us"><img src="img/modal-close.png" alt="Закрыть форму"></button>
         </form> 
       </div>
       <div class="map-popup">
           <h2 class="visually-hidden">Где мы находимся</h2>
           <img src="img/full-map.png" alt="Город Москва, улица Строителей, дом 15">
+          <button type="button" name="close-map"><img src="img/modal-close.png" alt="Закрыть карту"></button>
       </div>
     </body>
 

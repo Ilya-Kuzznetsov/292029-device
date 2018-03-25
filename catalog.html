@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Девайс</title>
+    <link rel="stylesheet" href="css/normolize.css">
   </head>
   <body>
     <h1 class="visualy-hidden">Каталог интернет-магазина Device</h1>
@@ -66,7 +67,8 @@
             </ul>
         </section>
 <!-- Сортировка по цене типу и популярности -->
-        <div class="sort">
+        <section class="sort">
+            <h2 class="visually-hidden">Сортировка товаров</h2>
             <p><b>Сортировка:</b></p>
             <ul class="sort-list">
                 <li class="sort-list-item"><a href="#">По цене</a></li>
@@ -75,11 +77,14 @@
             </ul>
             <a href="#">От большего к меньшему</a>
             <a href="#">От меньшего к большему</a>
-        </div>
+        </section>
 <!-- Форма фильтра -->
+        <aside>
+            <h3 class="visually-hidden">Фильтр товаров</h3>
         <form class="filter" method="POST" action="https://echo.htmlacademy.ru">
             <p><b>Фильтр:</b></p>
-            <input type="range" name="Price range">
+            <label for="price">Стоимость</label>
+            <input type="range" name="Price range" id="price">
             <ul>
                 <li>
                     <label for="black">Черный</label>
@@ -108,29 +113,50 @@
 
             <input type="submit" value="Показать">
         </form>
+        </aside>
 <!-- Каталог товаров -->
+    <section class="main-catalog">
+        <h2 class="visually-hidden">Основной каталог продукции</h2>
         <ul>
             <li>
                 <img src="img/product-1.jpeg" width="360" height="380" alt="Любительская селфи-палка">
                 <p><a href="#">Любительская селфи-палка</a></p>
                 <p>500 руб.</p>
+                <a href="#" class="visually-hidden">В корзину</a>
+                <a href="#" class="visually-hidden">Добавить к сравнению</a>
             </li>
             <li>
                 <img src="img/product-2.jpeg" width="360" height="380" alt="Профессиональная селфи-палка">
                 <p><a href="#">Профессиональная селфи-палка</a></p>
                 <p>1500 руб.</p>
+                <a href="#" class="visually-hidden">В корзину</a>
+                <a href="#" class="visually-hidden">Добавить к сравнению</a>
             </li>
             <li>
                 <img src="img/product-3.jpeg" width="360" height="380" alt="Непотопляемая селфи-палка">
                 <p><a href="#">Непотопляемая селфи-палка</a></p>
                 <p>2500 руб.</p>
+                <a href="#" class="visually-hidden">В корзину</a>
+                <a href="#" class="visually-hidden">Добавить к сравнению</a>
             </li>
             <li>
                 <img src="img/product-4.jpeg" width="360" height="380" alt="Селфи-палка «Следуй за мной»">
                 <p><a href="#">Селфи-палка «Следуй за мной</a></p>
                 <p>4900 руб.</p>
+                <a href="#" class="visually-hidden">В корзину</a>
+                <a href="#" class="visually-hidden">Добавить к сравнению</a>
             </li>
         </ul>
+    </section>
+    <h2 class="visually-hidden">Навигация по страницам каталога</h2>
+    <div class="page-navigation">
+        <a href="#">Назад</a>
+        <a href="#">1</a>
+        <a href="#">2</a>
+        <a href="#">3</a>
+        <a href="#">Вперед</a>
+
+    </div>
     </main>
 <!-- Футер -->
      <footer class="page-footer">
@@ -142,7 +168,8 @@
                 <a href="#">Контакты</a>
               </div>
               <ul class="pafe-footer-navigation">
-                <li><a href="#">Войти</a></li>
+                <li><a href="#">Веталий Петухов</a></li>
+                <li><a href="#">Выйти</a></li>
                 <li><a href="#">Сравнить</a></li>
                 <li><a href="#">Корзина</a></li>
               </ul>
