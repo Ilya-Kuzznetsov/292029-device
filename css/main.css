@@ -74,6 +74,31 @@ ul {
     margin-left: 600px;
     justify-content: space-between;
 }
+.slider-img-1{
+    display: block;
+    z-index: 1;
+    margin-left: 90px;
+    margin-top: -135px;
+}
+.slider-1-text{
+    display: block;
+    position: relative;
+    top: -423px;
+    left: 600px;
+    width: 500px;
+    height: auto;
+}
+.slider-1-head{
+    font-size: 46px;
+    line-height: 55px;
+    font-weight: 800;
+    letter-spacing: 0.02em;
+}
+.slider-1-main-text{
+    font-family: "Open Sans", sans-serif;
+    font-size: 15px;
+    line-height: 30px;
+}
 .main-catalog{
     display: none;
     font-family: "Myriad Pro", sans-serif;
