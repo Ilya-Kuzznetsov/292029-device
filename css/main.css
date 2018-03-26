@@ -11,35 +11,41 @@ ul {
     height: 1px;
     margin: -1px;
 }
-.main-wrapper{
-    margin: 0  auto;
-    width: 1160px;
+.container { 
+    display: block;
+    margin: 0 auto; 
+    width: 1160px; 
+    padding: 0 20px; 
 }
 .main-header{
     background-color: #f7e296;
-    width: 100%;
-    height: 317px;
+    height: 299px;
     margin-top: 40px;
     padding: 0;
 }
 .main-header-main-navigation{
     padding:0;
 }
+.search-form{
+    margin-left: 60px;
+}
 .main-header-main-navigation-logo{
     display: block;
     position: relative;
-    top: -20px;
-    left: 60px;
+    top: -19px;
+    left: 59px;
     width: 165px;
 }
 .main-header-main-navigation-list{
     display: flex;
     position: relative;
-    margin-left: 20px;
+    padding: 0;
+    margin-left: 60px;
     justify-content: space-between;
     font-size: 18px;
     line-height: 24px;
-    font-family: "Gilroy ExtraBold", sans-serif;
+    font-family: "Gilroy ExtraBold", "Tahoma", sans-serif;
+    letter-spacing: 0.2em;
     text-transform: uppercase;
 }
 .main-catalog-flexitem1{
@@ -81,3 +87,10 @@ ul {
     justify-content: flex-start;
     align-content: space-between;
 }
+@font-face {
+    font-family: "Gilroy"; 
+    src: url("../fonts/gilroyextrabold.woff2") format(woff2), 
+    url("../fonts/gilroyextrabold.woff") format(woff); 
+    font-style: normal; 
+    font-weight: 700; 
+} 
