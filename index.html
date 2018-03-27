@@ -72,10 +72,10 @@
         <div class="main-field-slider-1">
             <img class="slider-img-1" src="img/slider-1.png" width="384" height="486" alt="Длинная селфи-палка">
             <div class="slider-1-text">
-            <p><span class="slider-1-head">Делай селфи,<br> как Бен Стиллер!</span></p>
-            <p><span class="slider-1-main-text">Самая длинная палка для селфидоступна в нашем магазине.<br>Восемь (Восемь, Карл!) метров длинной и весом всего 5 килограмм.</span></p>
-            <a href="#">ПОДРОБНЕЕ</a>
-            <table>
+            <p><span class="slider-head">Делай селфи,<br> как Бен Стиллер!</span></p>
+            <p><span class="slider-main-text">Самая длинная палка для селфидоступна в нашем магазине.<br>Восемь (Восемь, Карл!) метров длинной и весом всего 5 килограмм.</span></p>
+            <a href="#"><span class="slider-more">ПОДРОБНЕЕ</span></a>
+            <table class="spec">
              <tr>
                 <th>8,5 м</th>
                 <th>5 кг</th>
@@ -92,10 +92,11 @@
 <!-- Слайдер 2 -->
         <div class="main-field-slider-2">
             <img src="img/slider-2.png" width="345" height="485" alt="Фитнес-браслет">
-            <p>Худеем правильно!</p>
-            <p>Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.</p>
-            <a href="#">Подробнее</a>
-            <table>
+            <div class="slider-2-text">
+            <p><span class="slider-head">Худеем правильно!</span></p>
+            <p><span class="slider-main-text">Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.</span></p>
+            <a href="#"><span class="slider-more">ПОДРОБНЕЕ</span></a>
+            <table class="spec">
                 <tr>
                    <th>48 часов</th>
                 </tr>
@@ -103,14 +104,16 @@
                   <td>Без подзарядки</td>
                 </tr>
                </table>
+               </div>
         </div>
 <!-- Слайдер 3 -->
         <div class="main-field-slider-3">
             <img src="img/slider-3.png" width="526" height="334" alt="Крутой квадрокоптер">
-            <p>Порхает как бабочка, жалит как пчела!</p>
-            <p>Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.</p>
-            <a href="#">Подробнее</a>
-            <table>
+            <div class="slider-3-text">
+            <p><span class="slider-head">Порхает как бабочка, жалит как пчела!</span></p>
+            <p><span class="slider-main-text">Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.</span></p>
+            <a href="#"><span class="slider-more">ПОДРОБНЕЕ</span></a>
+            <table class="spec">
                 <tr>
                    <th>800 м</th>
                    <th>50 м</th>
@@ -120,6 +123,7 @@
                   <td>Радиус поражения</td>
                 </tr>
                </table>
+               </div>
         </div>
       </section>
 <!-- Каталожные иконки под слайдером -->
@@ -161,7 +165,7 @@
           <section class="main-field--services-1">
               <h2>Доставка</h2>
               <p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно!Ведь мы неплохозаработаем, поднимая его на ваш этаж.</p>
-          </section>>
+          </section>
           <section class="main-field--services-2">
               <h2>Гарантия</h2>
               <p>Если из-за возгорания купленного у нас товара у вас сгорит дом - не переживайте, мы выддаим вам новый. Товар, не дом, конечно же.</p>
@@ -189,8 +193,7 @@
       </section>
 <!-- О нас -->
       <section class="main-field-info">
-        <h2 class="visually-hidden">О нас</h2>
-        <p><b>О нас</b></p>
+        <h2>О нас</h2>
         <p>Огромный выбор гаджетовне оставит равнодушным гика, который есть в каждом из нас</p>
         <p>Мы можем доставить ваш товар в самые отдаленные точки России! DEVICE работает о многими транспортными компаниями.</p>
         <ul>
@@ -202,8 +205,7 @@
       </section>
 <!-- Контакты -->
       <section class="main-field-contacts">
-        <h2 class="visually-hidden">Контакты</h2>
-        <p><b>Контакты</b></p>
+        <h2>Контакты</h2>
         <p>Вы можетезабрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.</p>
         <img src="img/map.png" width="560" height="222" alt="Город Москва, улица Строителей, дом 15">
         <a href="#">Напишите нам</a>
@@ -243,7 +245,7 @@
           <label for="content">Текст письма:</label>
           <input type="text" name="Content" id="content" placeholder="В свободной форме">
           
-          <input type="submit" value="Отправить">
+          <input type="submit" value="Отправить" class="send">
           <button type="button" name="close-write-us"><img src="img/modal-close.png" alt="Закрыть форму"></button>
         </form> 
       </div>
