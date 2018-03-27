@@ -1,3 +1,40 @@
+@font-face {
+    font-family: "Open Sans";
+    src: local("OpenSans-Regular"),
+    local("OpenSans Regular"),
+    local("Open Sans Regular"),
+    url("../fonts/opensans.woff2") format("woff2"),
+    url("../fonts/opensans.woff") format("woff");
+    font-weight: 400;
+  }
+  
+@font-face {
+    font-family: "Open Sans";
+    src: local("OpenSans-Light"),
+    local("OpenSans Light"),
+    local("Open Sans Light"),
+    url("../fonts/opensanslight.woff2") format("woff2"),
+    url("../fonts/opensanslight.woff") format("woff");
+    font-weight: 300;
+  }
+  
+@font-face {
+    font-family: "Gilroy";
+    src: local("Gilroy Light"),
+    local("Gilroy-Light"),
+    url("../fonts/gilroylight.woff2") format("woff2"),
+    url("../fonts/gilroylight.woff") format("woff");
+    font-weight: 300;
+  }
+  
+@font-face {
+    font-family: "Gilroy";
+    src: local("Gilroy Extrabold"),
+    local("Gilroy-Extrabold"),
+    url("../fonts/gilroyextrabold.woff2") format("woff2"),
+    url("../fonts/gilroyextrabold.woff") format("woff");
+    font-weight: 800;
+  }
 body{
     font-size: 18px;
     line-height: 24px;
@@ -6,6 +43,8 @@ body{
 }
 a {
     text-decoration: none;
+    color: black;
+
 }
 ul {
     list-style: none;
@@ -52,6 +91,9 @@ ul {
     margin-top: 45px;
     justify-content: space-between;
     text-transform: uppercase;  
+    font-weight: bold;
+    letter-spacing: 4px;
+    
 }
 .main-header-main-navigation-login{
     margin-top: -27px;
@@ -120,40 +162,3 @@ ul {
     justify-content: flex-start;
     align-content: space-between;
 }
-@font-face {
-    font-family: "Open Sans";
-    src: local("OpenSans-Regular"),
-    local("OpenSans Regular"),
-    local("Open Sans Regular"),
-    url("../fonts/opensans.woff2") format("woff2"),
-    url("../fonts/opensans.woff") format("woff");
-    font-weight: 400;
-  }
-  
-  @font-face {
-    font-family: "Open Sans";
-    src: local("OpenSans-Light"),
-    local("OpenSans Light"),
-    local("Open Sans Light"),
-    url("../fonts/opensanslight.woff2") format("woff2"),
-    url("../fonts/opensanslight.woff") format("woff");
-    font-weight: 300;
-  }
-  
-  @font-face {
-    font-family: "Gilroy";
-    src: local("Gilroy Light"),
-    local("Gilroy-Light"),
-    url("../fonts/gilroylight.woff2") format("woff2"),
-    url("../fonts/gilroylight.woff") format("woff");
-    font-weight: 300;
-  }
-  
-  @font-face {
-    font-family: "Gilroy";
-    src: local("Gilroy Extrabold"),
-    local("Gilroy-Extrabold"),
-    url("../fonts/gilroyextrabold.woff2") format("woff2"),
-    url("../fonts/gilroyextrabold.woff") format("woff");
-    font-weight: 800;
-  }
