@@ -75,11 +75,9 @@ ul {
     height: 299px;
     margin-top: 40px;
     padding: 0;
-    outline: 1px solid red;
 }
 .main-header-main-navigation{
     padding:0;
-    outline: 1px solid red;
 }
 .main-header-main-navigation-logo{
     display: block;
@@ -90,7 +88,7 @@ ul {
 }
 .search-form{
     margin-left: 70px;
-    margin-top: 5px;
+    margin-top: 1px;
     padding: 0;
     font-family: "Open Sans", sans-serif;
     font-size: 15px;
@@ -100,7 +98,7 @@ ul {
     display: flex;
     margin-left: 600px;
     justify-content: space-between;
-    margin-top: -27px;
+    margin-top: -30px;
     font-family: "Open Sans", sans-serif;
     font-size: 15px;
     line-height: 30px;
@@ -131,63 +129,89 @@ ul {
 }
 .main-catalog{
     display: none;
-    width: 1100px;
+    width: 570px;
     height: 135px;
-    font-family: "Myriad Pro", sans-serif;
+    padding: 0;
+    font-family: "Open Sans", "Tahoma", sans-serif;
     font-size: 15px;
+    line-height: 36px;
+    letter-spacing: 0;
     text-transform: none;
-    background-color: #f7e296;
-    margin-left: -40px;
 }
 .main-header-main-navigation-list >li:hover > .main-catalog{
     display: flex;
     flex-wrap: wrap;
+    justify-content: flex-start;
     z-index: 2;
 }
 .main-header-main-navigation-list >li:focus > .main-catalog{
     display: flex;
 }
+.main-catalog li:nth-child(1){
+    margin-right: 58px;
+}
+.main-catalog li:nth-child(2){
+    margin-right: 75px;
+}
+.main-catalog li:nth-child(4){
+    margin-right: 85px;
+}
+
+.main-catalog li:nth-child(6){
+    flex-basis: 400px;
+}
+.yellow-brick{
+    display: none;
+    width: 1160px;
+    height: 129px;
+    margin-top: -129px;
+    background-color: #ffc600;
+    z-index: 2;
+}
+.main-header-main-navigation-list >li:hover > .yellow-brick{
+    display: block;
+}
 
                                         /* Шрифты */
 
-.main-field-catalog-items, 
-.main-field-services label, 
-.main-field-info a, 
-.main-field-contacts a, 
-.page-footer-services a, 
-.write-us-popup label, 
-.write-us-popup .send, 
+.main-field-catalog-items,
+.main-field-services label,
+.main-field-info a,
+.main-field-contacts a,
+.page-footer-services a,
+.write-us-popup label,
+.write-us-popup .send,
 .slider-more{
     font-family: "Gilroy", "Tahoma", sans-serif;
     font-size: 18px;
     line-height: 24px;
     font-weight: bold;
 }
-.main-field-services h2, 
-.main-field-info h2, 
+.main-field-services h2,
+.main-field-info h2,
 .main-field-contacts h2{
     font-family: "Gilroy", "Tahoma", sans-serif;
     font-size: 47px;
     line-height: 48px;
     font-weight: bold;
 }
-.main-field-services p, 
-.main-field-info p, 
-.main-field-contacts p, 
-.page-footer, 
+.main-field-services p,
+.main-field-info p,
+.main-field-contacts p,
+.page-footer,
 .main-field-info li{
     font-family: "Gilroy", "Tahoma", sans-serif;
     font-size: 16px;
     line-height: 40px;
     font-weight: bold;
 }
-.main-field-services p, 
-.main-field-info p, 
-.slider-main-text, 
-.page-footer p, 
-.main-field-contacts p, 
-.page-footer-navigation-catalog a, 
-.page-footer-navigation a{
+.main-field-services p,
+.main-field-info p,
+.slider-main-text,
+.page-footer p,
+.main-field-contacts p,
+.page-footer-navigation-catalog a,
+.page-footer-navigation a,{
     font-family: "Open Sans", "Tahoma", sans-serif;
     font-size: 15px;
     line-height: 30px;
@@ -224,6 +248,12 @@ ul {
 }
 
                         /* =============СТИЛИ ГЛАВНОЙ============= */
+
+                                         /* Хэдер */
+
+.main-header-main-navigation-login.first-page{
+}
+.main-catalog-flexitem1 .main-catalog
 
                                         /* Слайдеры */
 
