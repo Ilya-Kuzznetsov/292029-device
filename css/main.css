@@ -185,7 +185,9 @@ ul {
 .main-field-info p, 
 .slider-main-text, 
 .page-footer p, 
-.main-field-contacts p{
+.main-field-contacts p, 
+.page-footer-navigation-catalog a, 
+.page-footer-navigation a{
     font-family: "Open Sans", "Tahoma", sans-serif;
     font-size: 15px;
     line-height: 30px;
