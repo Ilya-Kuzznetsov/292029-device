@@ -35,6 +35,9 @@
     url("../fonts/gilroyextrabold.woff") format("woff");
     font-weight: 800;
 }
+
+                        /* =============ОБЩИЕ СТИЛИ============= */
+
 body{
     font-size: 18px;
     line-height: 24px;
@@ -48,6 +51,9 @@ a {
 ul {
     list-style: none;
 }
+
+                                /* Вспомогательные классы */
+                                
 .visually-hidden {
     position: absolute;
     clip: rect(0 0 0 0);
@@ -61,14 +67,26 @@ ul {
     width: 1160px; 
     padding: 0 20px; 
 }
+
+                                        /* Хэдер */
+
 .main-header{
     background-color: #f7e296;
     height: 299px;
     margin-top: 40px;
     padding: 0;
+    outline: 1px solid red;
 }
 .main-header-main-navigation{
     padding:0;
+    outline: 1px solid red;
+}
+.main-header-main-navigation-logo{
+    display: block;
+    position: relative;
+    top: -19px;
+    left: 59px;
+    width: 165px;
 }
 .search-form{
     margin-left: 70px;
@@ -78,12 +96,14 @@ ul {
     font-size: 15px;
     line-height: 30px;
 }
-.main-header-main-navigation-logo{
-    display: block;
-    position: relative;
-    top: -19px;
-    left: 59px;
-    width: 165px;
+.main-header-main-navigation-login{
+    display: flex;
+    margin-left: 600px;
+    justify-content: space-between;
+    margin-top: -27px;
+    font-family: "Open Sans", sans-serif;
+    font-size: 15px;
+    line-height: 30px;
 }
 .main-header-main-navigation-list{
     display: flex;
@@ -95,131 +115,6 @@ ul {
     text-transform: uppercase;  
     font-weight: bold;
     letter-spacing: 4px;    
-}
-.slider-head{
-    font-family: "Gilroy", "Tahoma", sans-serif;
-    font-size: 47px;
-    line-height: 56px;
-    font-weight: bold;
-}
-.main-field-catalog-items{
-    font-family: "Gilroy", "Tahoma", sans-serif;
-    font-size: 18px;
-    line-height: 24px;
-    font-weight: bold;
-}
-.main-field-services label{
-    font-family: "Gilroy", "Tahoma", sans-serif;
-    font-size: 18px;
-    line-height: 24px;
-    font-weight: bold;
-}
-.main-field-services h2{
-    font-family: "Gilroy", "Tahoma", sans-serif;
-    font-size: 47px;
-    line-height: 48px;
-    font-weight: bold;
-}
-.main-field-services p{
-    font-family: "Open Sans", "Tahoma", sans-serif;
-    font-size: 15px;
-    line-height: 30px;
-}
-.main-field-info h2{
-    font-family: "Gilroy", "Tahoma", sans-serif;
-    font-size: 47px;
-    line-height: 48px;
-    font-weight: bold;
-}
-.main-field-info p{
-    font-family: "Open Sans", "Tahoma", sans-serif;
-    font-size: 15px;
-    line-height: 30px;
-}
-.main-field-info li{
-    font-family: "Gilroy", "Tahoma", sans-serif;
-    font-size: 16px;
-    line-height: 40px;
-    font-weight: bold;
-}
-.main-field-info a{
-    font-family: "Gilroy", "Tahoma", sans-serif;
-    font-size: 18px;
-    line-height: 24px;
-    font-weight: bold;
-}
-.main-field-contacts h2{
-    font-family: "Gilroy", "Tahoma", sans-serif;
-    font-size: 47px;
-    line-height: 48px;
-    font-weight: bold;
-}
-.main-field-contacts p{
-    font-family: "Open Sans", "Tahoma", sans-serif;
-    font-size: 15px;
-    line-height: 30px;
-}
-.main-field-contacts a{
-    font-family: "Gilroy", "Tahoma", sans-serif;
-    font-size: 18px;
-    line-height: 24px;
-    font-weight: bold;
-}
-.page-footer p{
-    font-family: "Open Sans", "Tahoma", sans-serif;
-    font-size: 15px;
-    line-height: 30px;
-}
-.page-footer a{
-    font-family: "Open Sans", "Tahoma", sans-serif;
-    font-size: 15px;
-    line-height: 36px;
-}
-.page-footer-services a{
-    font-family: "Gilroy", "Tahoma", sans-serif;
-    font-size: 18px;
-    line-height: 24px;
-    font-weight: bold;
-}
-.write-us-popup{
-    font-family: "Open Sans", "Tahoma", sans-serif;
-    font-size: 14px;
-    line-height: 18px;
-}
-.write-us-popup label{
-    font-family: "Gilroy", "Tahoma", sans-serif;
-    font-size: 18px;
-    line-height: 24px;
-    font-weight: bold;
-}
-.write-us-popup .send{
-    font-family: "Gilroy", "Tahoma", sans-serif;
-    font-size: 18px;
-    line-height: 24px;
-    font-weight: bold;
-}
-.slider-main-text{
-    font-family: "Open Sans", "Tahoma", sans-serif;
-    font-size: 15px;
-    line-height: 30px;
-}
-.slider-more{
-    font-family: "Gilroy", "Tahoma", sans-serif;
-    font-size: 18px;
-    line-height: 24px;
-    font-weight: bold;
-}
-.spec th{
-    font-family: "Gilroy", "Tahoma", sans-serif;
-    font-size: 36px;
-    line-height: 48px;
-    font-weight: 300;
-}
-.spec td{
-    font-family: "Open Sans", "Tahoma", sans-serif;
-    font-size: 13px;
-    line-height: 20px;
-    font-weight: 300;
 }
 .main-catalog-flexitem1{
     margin-right: 295px;
@@ -234,16 +129,6 @@ ul {
 .main-catalog-flexitem4{
     margin-right: 60px;
 }
-.main-header-main-navigation-login{
-    display: flex;
-    margin-left: 600px;
-    justify-content: space-between;
-    margin-top: -27px;
-    font-family: "Open Sans", sans-serif;
-    font-size: 15px;
-    line-height: 30px;
-
-}
 .main-catalog{
     display: none;
     width: 1100px;
@@ -254,7 +139,6 @@ ul {
     background-color: #f7e296;
     margin-left: -40px;
 }
-
 .main-header-main-navigation-list >li:hover > .main-catalog{
     display: flex;
     flex-wrap: wrap;
@@ -263,11 +147,186 @@ ul {
 .main-header-main-navigation-list >li:focus > .main-catalog{
     display: flex;
 }
-.main-catalog-flex{
-    display: flex;
-    flex-wrap: wrap;
-    width: 550px;
-    margin-left: -39px;
-    justify-content: flex-start;
-    align-content: space-between;
+
+                                        /* Шрифты */
+
+.main-field-catalog-items, 
+.main-field-services label, 
+.main-field-info a, 
+.main-field-contacts a, 
+.page-footer-services a, 
+.write-us-popup label, 
+.write-us-popup .send, 
+.slider-more{
+    font-family: "Gilroy", "Tahoma", sans-serif;
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: bold;
+}
+.main-field-services h2, 
+.main-field-info h2, 
+.main-field-contacts h2{
+    font-family: "Gilroy", "Tahoma", sans-serif;
+    font-size: 47px;
+    line-height: 48px;
+    font-weight: bold;
+}
+.main-field-services p, 
+.main-field-info p, 
+.main-field-contacts p, 
+.page-footer, 
+.main-field-info li{
+    font-family: "Gilroy", "Tahoma", sans-serif;
+    font-size: 16px;
+    line-height: 40px;
+    font-weight: bold;
+}
+.main-field-services p, 
+.main-field-info p, 
+.slider-main-text, 
+.page-footer p, 
+.main-field-contacts p{
+    font-family: "Open Sans", "Tahoma", sans-serif;
+    font-size: 15px;
+    line-height: 30px;
+}
+
+                                        /* Футер */
+
+.page-footer{
+    color: #ffffff;
+    background-color: #464646;
+}
+.page-footer .device-logo{
+    font-family: "Gilroy", "Tahoma", sans-serif;
+    font-size: 48px;
+    line-height: 48px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #ffc600;
+    
+}
+.page-footer-services a{
+    color: #ffffff;
+}
+.page-footer-navigation a{
+    color: #ffffff;
+}
+
+                                        /* Попапы */
+
+.write-us-popup{
+    font-family: "Open Sans", "Tahoma", sans-serif;
+    font-size: 14px;
+    line-height: 18px;
+}
+
+                        /* =============СТИЛИ ГЛАВНОЙ============= */
+
+                                        /* Слайдеры */
+
+.slider-head{
+    font-family: "Gilroy", "Tahoma", sans-serif;
+    font-size: 47px;
+    line-height: 56px;
+    font-weight: bold;
+}
+.spec th{
+    font-family: "Gilroy", "Tahoma", sans-serif;
+    font-size: 36px;
+    line-height: 48px;
+    font-weight: 300;
+}
+.spec td{
+    font-family: "Open Sans", "Tahoma", sans-serif;
+    font-size: 13px;
+    line-height: 20px;
+    font-weight: 300;
+}
+
+                        /* =============СТИЛИ КАТАЛОГА============= */
+
+.way h2{
+    font-family: "Gilroy", "Tahoma", sans-serif;
+    font-size: 47px;
+    line-height: 48px;
+    font-weight: bold;
+}
+.way-list li{
+    font-family: "Open Sans", "Tahoma", sans-serif;
+    font-size: 14px;
+    line-height: 24px;
+    opacity: 0.3;
+}
+.sort h2{
+    font-family: "Gilroy", "Tahoma", sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+.sort-list li{
+    font-family: "Open Sans", "Tahoma", sans-serif;
+    font-size: 14px;
+    line-height: 18px;
+    opacity: 0.3;
+}
+.sort-list li:nth-child(1){
+    font-family: "Open Sans", "Tahoma", sans-serif;
+    font-size: 14px;
+    line-height: 18px;
+    opacity: 1;
+}
+.filter p{
+    font-family: "Gilroy", "Tahoma", sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}.filter legend{
+    font-family: "Gilroy", "Tahoma", sans-serif;
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: bold;
+}
+.filter label{
+    font-family: "Open Sans", "Tahoma", sans-serif;
+    font-size: 14px;
+    line-height: 40px;
+}
+.send {
+    font-family: "Gilroy", "Tahoma", sans-serif;
+    font-size: 18px;
+    line-height: auto;
+    font-weight: bold;
+}
+.main-field-catalog a{
+    font-family: "Gilroy", "Tahoma", sans-serif;
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: bold;
+}
+.main-field-catalog .price{
+    font-family: "Gilroy", "Tahoma", sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    color: #464646;
+}
+.page-navigation a{
+    font-family: "Gilroy", "Tahoma", sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: bold;
+}
+.page-navigation a:nth-child(3),
+.page-navigation a:nth-child(4){
+    opacity: 0.3;
+}
+.page-footer-navigation-catalog a{
+    color: #ffffff;
+}
+.page-footer-navigation-catalog li:nth-child(2){
+    opacity: 0.3;
 }
