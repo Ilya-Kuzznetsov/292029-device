@@ -11,10 +11,11 @@ ul {
     height: 1px;
     margin: -1px;
 }
-.main-wrapper{
-    margin: 0  auto;
-    width: 1160px;
-}
+.container { 
+    margin: 0 auto; 
+    width: 1160px; 
+    padding: 0 20px; 
+} 
 .main-header{
     background-color: #f7e296;
     width: 100%;
@@ -69,16 +70,4 @@ ul {
 
 .main-header-main-navigation-list >li:hover > .main-catalog{
     display: block;
-}
-.main-header-main-navigation-list >li:focus > .main-catalog{
-    display: block;
-}
-.main-catalog-flex{
-    display: flex;
-    flex-wrap: wrap;
-    width: 550px;
-    margin-left: -39px;
-    justify-content: flex-start;
-    align-content: space-between;
-
 }
