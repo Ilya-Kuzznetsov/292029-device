@@ -190,8 +190,6 @@ ul {
     font-weight: bold;
 }
 .main-field-services p,
-.main-field-info p,
-.main-field-contacts p,
 .page-footer,
 .main-field-info li{
     font-family: "Gilroy", "Tahoma", sans-serif;
@@ -232,6 +230,23 @@ ul {
 .page-footer-navigation a{
     color: #ffffff;
 }
+.first-row,
+.page-footer-navigation{
+    display: flex;
+    justify-content: space-between;
+}
+ .second-row,
+.page-footer-services{
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+.third-row,
+.page-footer-social{
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
 
                                         /* Попапы */
 
@@ -248,7 +263,54 @@ ul {
 .main-header-main-navigation-login.first-page li{
     outline: 1px solid red;
 }
-.main-catalog-flexitem1 .main-catalog
+
+                              /* Каталожные иконки под слайдером */
+.main-field-catalog-items{
+    margin: 0;
+    padding: 0;
+}
+.main-field-catalog-items-list{
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+}
+.main-field-catalog-items-list li{
+    height: 250px;
+    flex-basis: 160px;
+    outline: 1px solid red;
+}
+.items-list{
+    outline: 1px solid blue;
+    height: 200px;
+    width: 160px;
+}
+                                    /* Партнеры */
+
+ .main-field-partners{
+    display: flex;
+    justify-content: space-around;
+}
+.main-field-partners img{
+    filter: grayscale(100%);
+}
+.main-field-partners img:hover{
+    filter: grayscale(0%);
+}
+
+                             /* О нас и контакты внизу страницы */
+
+.about-us-contacts{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 100px;
+}
+.main-field-info,
+.main-field-contacts{
+    flex-basis: 500px;
+}
+
+
 
                                         /* Слайдеры */
 
