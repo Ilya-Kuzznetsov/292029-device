@@ -9,11 +9,7 @@
   <body>
     <h1 class="visually-hidden">Device - интернет-магазин крутых гаджетов и смежной продукции</h1>
 <!-- Хэдер -->
-<<<<<<< HEAD
-    <header class="main-header, container">
-=======
     <header class="main-header container">
->>>>>>> cb383408b00f454f5b117c4047aab306950f61f3
       
       <nav class="main-header-main-navigation">
 <!-- Logo -->
@@ -68,71 +64,75 @@
     </header>
 
     <main class="main-field container">
-      <div class="yellow-brick"></div>
-<!-- Слайдер -->
-      <section class="main-field-slider container">
-          <h2 class="visually-hidden">Популярные товары</h2>
-          <input name="slider-1-radio" type="radio">
-          <input name="slider-2-radio" type="radio">
-          <input name="slider-3-radio" type="radio">
-<!-- Слайдер 1 -->
-        <div class="main-field-slider-1">
-            <img class="slider-img-1" src="img/slider-1.png" width="384" height="486" alt="Длинная селфи-палка">
-            <div class="slider-1-text">
-            <p><span class="slider-head">Делай селфи,<br> как Бен Стиллер!</span></p>
-            <p><span class="slider-main-text">Самая длинная палка для селфидоступна в нашем магазине.<br>Восемь (Восемь, Карл!) метров длинной и весом всего 5 килограмм.</span></p>
-            <a href="#"><span class="slider-more">ПОДРОБНЕЕ</span></a>
-            <table class="spec">
-             <tr>
-                <th>8,5 м</th>
-                <th>5 кг</th>
-                <th>Карбон</th>
-             </tr>
-             <tr>
-               <td>Длина палки</td>
-               <td>Вес палки</td>
-               <td>Материал</td>
-             </tr>
-            </table>
-            </div>
+      <!-- Slider -->
+      <section class="slider container">
+        <input class="visually-hidden" type="radio" id="product-1" name="toggle" checked>
+        <input class="visually-hidden" type="radio" id="product-2" name="toggle">
+        <input class="visually-hidden" type="radio" id="product-3" name="toggle">
+        <div class="slider-controls">
+          <label class="slider-controls-item slider-controls-item--1" for="product-1">Первый</label>
+          <label class="slider-controls-item slider-controls-item--2" for="product-2">Второй</label>
+          <label class="slider-controls-item slider-controls-item--3" for="product-3">Третий</label>
         </div>
-<!-- Слайдер 2 -->
-        <div class="main-field-slider-2">
-            <img src="img/slider-2.png" width="345" height="485" alt="Фитнес-браслет">
-            <div class="slider-2-text">
-            <p><span class="slider-head">Худеем правильно!</span></p>
-            <p><span class="slider-main-text">Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.</span></p>
-            <a href="#"><span class="slider-more">ПОДРОБНЕЕ</span></a>
-            <table class="spec">
-                <tr>
-                   <th>48 часов</th>
-                </tr>
-                <tr>
-                  <td>Без подзарядки</td>
-                </tr>
-               </table>
-               </div>
-        </div>
-<!-- Слайдер 3 -->
-        <div class="main-field-slider-3">
-            <img src="img/slider-3.png" width="526" height="334" alt="Крутой квадрокоптер">
-            <div class="slider-3-text">
-            <p><span class="slider-head">Порхает как бабочка, жалит как пчела!</span></p>
-            <p><span class="slider-main-text">Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.</span></p>
-            <a href="#"><span class="slider-more">ПОДРОБНЕЕ</span></a>
-            <table class="spec">
-                <tr>
-                   <th>800 м</th>
-                   <th>50 м</th>
-                </tr>
-                <tr>
-                  <td>Дальность полета</td>
-                  <td>Радиус поражения</td>
-                </tr>
-               </table>
-               </div>
-        </div>
+        <ul class="slider-list">
+          <!-- Slider - 1 -->
+          <li class="slider-item">
+              <img class="slider-img-1" src="img/slider-1.png" width="384" height="486" alt="Длинная селфи-палка">
+              <p><span class="slider-head head1">Делай селфи,<br> как Бен Стиллер!</span></p>
+              <p><span class="slider-main-text text1">Самая длинная палка для селфидоступна в нашем магазине.<br>Восемь (Восемь, Карл!) метров длинной и весом всего 5 килограмм.</span></p>
+              <div class="slider-more"><a href="#">ПОДРОБНЕЕ</a></div>
+              <table class="spec spec1">
+               <tr>
+                  <th>8,5 м</th>
+                  <th>5 кг</th>
+                  <th>Карбон</th>
+               </tr>
+               <tr>
+                 <td>Длина палки</td>
+                 <td>Вес палки</td>
+                 <td>Материал</td>
+               </tr>
+              </table>
+          </li>
+          <!-- Slider - 2 -->
+          <li class="slider-item">
+              <img src="img/slider-2.png" width="345" height="485" alt="Фитнес-браслет">
+              <div class="slider-2-text">
+              <p><span class="slider-head">Худеем правильно!</span></p>
+              <p><span class="slider-main-text">Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.</span></p>
+              <a href="#"><span class="slider-more">ПОДРОБНЕЕ</span></a>
+              <table class="spec spec2">
+                  <tr>
+                     <th>48 часов</th>
+                  </tr>
+                  <tr>
+                    <td>Без подзарядки</td>
+                  </tr>
+                 </table>
+                 </div>
+          </li>
+          <!-- Slider - 3 -->
+          <li class="slider-item">
+              <img src="img/slider-3.png" width="526" height="334" alt="Крутой квадрокоптер">
+              <div class="slider-3-text">
+              <p><span class="slider-head">Порхает как бабочка, жалит как пчела!</span></p>
+              <p><span class="slider-main-text">Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.</span></p>
+              <a href="#"><span class="slider-more">ПОДРОБНЕЕ</span></a>
+              <table class="spec spec3">
+                  <tr>
+                     <th>800 м</th>
+                     <th>50 м</th>
+                  </tr>
+                  <tr>
+                    <td>Дальность полета</td>
+                    <td>Радиус поражения</td>
+                  </tr>
+                 </table>
+                 </div>
+          </li>
+        </ul>
       </section>
+
 <!-- Каталожные иконки под слайдером -->
       <section class="main-field-catalog-items container">
         <h2 class="visually-hidden">Категории товаров</h2>
@@ -193,17 +193,6 @@
           <input name="services-2-radio" type="radio" id="guarantees"> <label for="guarantees">Гарантии</label>
           <input name="services-3-radio" type="radio" id="credit" ><label for="credit">Кредит</label>
           <section class="main-field--services-1">
-<<<<<<< HEAD
-              <h3>Доставка</h3>
-              <p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно!Ведь мы неплохозаработаем, поднимая его на ваш этаж.</p>
-          </section>
-          <section class="main-field--services-2">
-              <h3>Гарантия</h3>
-              <p>Если из-за возгорания купленного у нас товара у вас сгорит дом - не переживайте, мы выддаим вам новый. Товар, не дом, конечно же.</p>
-          </section>
-          <section class="main-field--services-3">
-              <h3>Кредит</h3>
-=======
               <h2>Доставка</h2>
               <p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно!Ведь мы неплохозаработаем, поднимая его на ваш этаж.</p>
           </section>
@@ -213,7 +202,6 @@
           </section>
           <section class="main-field--services-3">
               <h2>Кредит</h2>
->>>>>>> cb383408b00f454f5b117c4047aab306950f61f3
               <p>Залезть в долговую яму стало проще! редитные консультанты подберут для вас наиболее выгодные условия кредита. Выгодные для нашего банка, разумеется.</p>
           </section>
       </section>
@@ -256,27 +244,6 @@
       </div>
     </main>
 <!-- Футер -->
-<<<<<<< HEAD
-    <footer class="page-footer">
-      <a href="#"><img src="img/logo.png" width="164" height="36" alt="Логотип Device"></a>
-      <p>г.Москва, ул. Строителей, 15</p>
-      <ul class="page-footer-services">
-          <li><a href="#">Доставка</a></li>
-          <li><a href="#">Гарантия</a></li>
-          <li><a href="#">Контакты</a></li>
-      </ul>
-        <ul class="pafe-footer-navigation">
-          <li><a href="#">Войти</a></li>
-          <li><a href="#">Сравнить</a></li>
-          <li><a href="#">Корзина</a></li>
-        </ul>
-        <p>Тел.: +7(495)495-95-95</p>
-        <a href="#">Фейсбук</a>
-        <a href="#">Инстаграм</a>
-        <a href="#">Твиттер</a>
-        <a href="https://htmlacademy.ru/"><img src="img/html-academy-logo.png" alt="Html академия"></a>
-      </footer>
-=======
 <footer class="page-footer">
   <div class="first-row container">
     <a class="device-logo" href="#">Device</a>
@@ -304,7 +271,6 @@
       <a class="html-academy" href="https://htmlacademy.ru/"><img src="img/html-academy-logo.png" alt="Html академия"></a>
       </div>
     </footer>
->>>>>>> cb383408b00f454f5b117c4047aab306950f61f3
 <!-- Попапы -->
       <div class="write-us-popup">
         <h2 class="visually-hidden">Напишите нам</h2>
