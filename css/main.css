@@ -76,6 +76,16 @@ ul {
     margin-top: 40px;
     padding: 0;
 }
+.main-header::after{
+    content: "";
+    width: 100px;
+    height: 7px;
+    position: relative;
+    top: 70px;
+    left: 600px;
+    background-color: #ffffff;
+    display: block;
+}
 .main-header-main-navigation{
     padding:0;
 }
@@ -129,11 +139,12 @@ ul {
     display: none;
     position: absolute;
     padding-left: 29px;
+    margin-top: 21px;
     margin-left: -59px;
     width: 1110px;
-    height: 133px;
+    height: 142px;
     background-color: #f7e296;
-    z-index: 2;
+    z-index: 5;
 }
 .main-header-main-navigation-list >li:hover > .yellow-brick{
     display: block;
@@ -142,7 +153,8 @@ ul {
     display: flex;
     flex-wrap: wrap;
     margin-left: 30px;
-    width: 570px;
+    margin-top: -20px;
+    width: 575px;
     height: 135px;
     padding: 0;
     font-family: "Open Sans", "Tahoma", sans-serif;
@@ -151,11 +163,19 @@ ul {
     letter-spacing: 0;
     text-transform: none;
 }
+.main-catalog li{
+    height: auto;
+}
 .main-catalog li:nth-child(1){
     margin-right: 58px;
+    margin-top: 20px;
 }
 .main-catalog li:nth-child(2){
     margin-right: 75px;
+    margin-top: 20px;
+}
+.main-catalog li:nth-child(3){
+    margin-top: 20px;
 }
 .main-catalog li:nth-child(4){
     margin-right: 85px;
@@ -260,9 +280,6 @@ ul {
 
                                          /* Хэдер */
 
-.main-header-main-navigation-login.first-page li{
-    outline: 1px solid red;
-}
 .navigation-login-1{
     background-image: url(../img/user.png);
     background-repeat: no-repeat;
@@ -285,7 +302,7 @@ ul {
     background-position: 0 9px;
     flex-basis: 86px;
     text-align: end;
-    margin-right: 61px;
+    margin-right: 59px;
 }
 
                               /* Каталожные иконки под слайдером */
@@ -410,7 +427,7 @@ ul {
                                         /* Слайдеры */
 
 .slider{
-    margin-bottom: 150px;
+    height: 481px;
 }
 .slider-head{
     font-family: "Gilroy", "Tahoma", sans-serif;
@@ -432,50 +449,227 @@ ul {
 }
 .slider-item{
     display: none;
+    height: 590px;
 }
 .slider-item:nth-child(1){
-    display: block;
-    margin-top: -153px;
+    margin-top: -154px;
     margin-left: 30px;
 }
+.slider-item:nth-child(2){
+    padding: 0;
+    margin-top: -142px;
+    margin-left: 56px;
+}
+.slider-item:nth-child(3){
+    padding: 0;
+    margin-top: -89px;
+    margin-left: -29px;
+}
+
 .head1{
     display: block;
-    margin-top: -432px;
+    margin-top: -431px;
     margin-left: 510px;
+}
+.head2{
+    margin-left: 484px;
+    margin-top: -442px;
+    display: block;
+}
+.head3{
+    display: block;
+    margin-left: 568px;
+    margin-top: -344px;
+    z-index: 3;
+    position: relative;
 }
 .text1{
     display: block;
     width: 512px;
     height: 46px;
-    margin-top: 20px;
+    margin-top: 16px;
     margin-left: 509px;
+}
+.text2{
+    display: block;
+    margin-left: 483px;
+    margin-top: 18px;
+    width: 451px;
+    height: 55px;
+}
+.text3{
+    display: block;
+    margin-left: 568px;
+}
+.slider-item:nth-child(1)::after {
+    content: "01";
+    position: relative;
+    top: -412px;
+    left: 840px;
+    font-family: "Gilroy", "Tahoma", sans-serif;
+    font-size: 179.2px;
+    font-weight: bold;
+    color: #ffffff;
+}
+.slider-item:nth-child(2)::after {
+    content: "02";
+    position: relative;
+    top: -415px;
+    left: 790px;
+    font-family: "Gilroy", "Tahoma", sans-serif;
+    font-size: 179.2px;
+    font-weight: bold;
+    color: #ffffff;
+}
+.slider-item:nth-child(3)::after {
+    content: "03";
+    position: relative;
+    top: -416px;
+    left: 873px;
+    font-family: "Gilroy", "Tahoma", sans-serif;
+    font-size: 179.2px;
+    font-weight: bold;
+    color: #ffffff;
+    z-index: 1;
+    display: block;
 }
 .slider-more{
     display: block;
     padding: 0;
+    width: 220px;
+    height: 8px;
+    background-color: #f0c52e;
+    letter-spacing: 3.2px;
+    margin-top: 73px;
+    margin-left: 510px;
+    text-transform: uppercase;
+}
+.slider-more2{
+    display: block;
+    padding: 0;
+    width: 220px;
+    height: 8px;
+    background-color: #f0c52e;
     letter-spacing: 3.2px;
     margin-top: 65px;
-    margin-left: 555px;
+    margin-left: 483px;
+    text-transform: uppercase;
+}
+.slider-more3{
+    display: block;
+    padding: 0;
+    width: 220px;
+    height: 8px;
+    background-color: #f0c52e;
+    letter-spacing: 3.2px;
+    margin-top: 60px;
+    margin-left: 569px;
+    text-transform: uppercase;
+}
+.slider-more a{
+    display: block;
+    position: relative;
+    top: -8px;
+    left: 43px;
+}
+.slider-more2 a{
+    display: block;
+    color: black;
+    position: relative;
+    top: -8px;
+    left: 42px;
+    font-weight: bold;
+}
+.slider-more3 a{
+    display: block;
+    color: black;
+    position: relative;
+    top: -8px;
+    left: 42px;
+    font-weight: bold;
 }
 .spec1{
     display: block;
-    width: 427px;
-    margin-top: 55px;
-    margin-left: 508px;
+    width: 454px;
+    margin-top: 63px;
+    margin-left: 507px;
 }
-.spec{
-    display: flex;
+.spec2{
+    display: block;
+    margin-left: 480px;
+    margin-top: 63px;
 }
+.spec3{
+    display: block;
+    margin-left: 566px;
+    margin-top: 62px;
+}
+.up .cell-1{
+    width: 155px;
+}
+.up .cell-2{
+    width: 136px;
+}
+.spec3 .cell-1{
+    height: 51px;
+    width: 155px;
+}
+.slider-controls{
+    position: relative;
+    width: 112px;
+    top: 215px;
+    left: 978px;
+    font-size: 0;
+}
+.slider-controls label{
+    position: relative;
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    padding: 0px;
+    margin-right: 21px;
+    border-radius: 50%;
+    cursor: pointer;
+    border: 1px solid black;
+}
+.slider-controls label::after {
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: 1;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: #ffffff;
+}
+
+
 #product-1:checked ~ .slider-list .slider-item:nth-child(1) {
     display: block;
 }
   
-  #product-2:checked ~ .slider-list .slider-item:nth-child(2) {
+#product-2:checked ~ .slider-list .slider-item:nth-child(2) {
     display: block;
 }
   
-  #product-3:checked ~ .slider-list .slider-item:nth-child(3) {
+#product-3:checked ~ .slider-list .slider-item:nth-child(3) {
     display: block;
+}
+#product-1:checked ~ .slider-controls .slider-controls-item-1::before,
+#product-2:checked ~ .slider-controls .slider-controls-item-2::before,
+#product-3:checked ~ .slider-controls .slider-controls-item-3::before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    z-index: 2;
+    width: 4px;
+    height: 4px;
+    margin: -3px;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 50%;
 }
 
                         /* =============СТИЛИ КАТАЛОГА============= */
