@@ -113,6 +113,10 @@ ul {
     letter-spacing: 3.7px;    
 }
 .main-catalog-flexitem1{
+    outline: 1px solid red;
+    background-image: url(../img/catalog-pluss.png);
+    background-repeat: no-repeat;
+    background-position: 231px 3px;
     flex-basis: 250px;
     margin-right: 292px;
 }
@@ -129,7 +133,7 @@ ul {
     margin-left: -59px;
     width: 1110px;
     height: 133px;
-    background-color: #ffc600;
+    background-color: #f7e296;
     z-index: 2;
 }
 .main-header-main-navigation-list >li:hover > .yellow-brick{
@@ -139,7 +143,7 @@ ul {
     display: flex;
     flex-wrap: wrap;
     margin-left: 30px;
-    /* width: 570px; */
+    width: 570px;
     height: 135px;
     padding: 0;
     font-family: "Open Sans", "Tahoma", sans-serif;
@@ -260,16 +264,25 @@ ul {
     outline: 1px solid red;
 }
 .navigation-login-1{
+    background-image: url(../img/user-icon.png);
+    background-repeat: no-repeat;
+    background-position: 0 9px;
     flex-basis: 74px;
     text-align: end;
     margin-right: 215px;
 }
 .navigation-login-2{
+    background-image: url(../img/compare.png);
+    background-repeat: no-repeat;
+    background-position: 1px 11px;
     flex-basis: 96px;
     text-align: end;
     margin-right: 40px;
 }
 .navigation-login-3{
+    background-image: url(../img/cart-icon.png);
+    background-repeat: no-repeat;
+    background-position: 0 9px;
     flex-basis: 86px;
     text-align: end;
     margin-right: 61px;
