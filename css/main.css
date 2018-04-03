@@ -123,12 +123,7 @@ ul {
     letter-spacing: 3.7px;    
 }
 .main-catalog-flexitem1{
-<<<<<<< HEAD
-    outline: 1px solid red;
-    background-image: url(../img/catalog-pluss.png);
-=======
     background-image: url(../img/plus.png);
->>>>>>> 4db04b3f3bd5887fa9bc0566e32576cab104a1e5
     background-repeat: no-repeat;
     background-position: 231px 3px;
     flex-basis: 250px;
@@ -147,15 +142,9 @@ ul {
     margin-top: 21px;
     margin-left: -59px;
     width: 1110px;
-<<<<<<< HEAD
-    height: 133px;
-    background-color: #f7e296;
-    z-index: 2;
-=======
     height: 142px;
     background-color: #f7e296;
     z-index: 5;
->>>>>>> 4db04b3f3bd5887fa9bc0566e32576cab104a1e5
 }
 .main-header-main-navigation-list >li:hover > .yellow-brick{
     display: block;
@@ -164,12 +153,8 @@ ul {
     display: flex;
     flex-wrap: wrap;
     margin-left: 30px;
-<<<<<<< HEAD
-    width: 570px;
-=======
     margin-top: -20px;
     width: 575px;
->>>>>>> 4db04b3f3bd5887fa9bc0566e32576cab104a1e5
     height: 135px;
     padding: 0;
     font-family: "Open Sans", "Tahoma", sans-serif;
@@ -296,11 +281,7 @@ ul {
                                          /* Хэдер */
 
 .navigation-login-1{
-<<<<<<< HEAD
-    background-image: url(../img/user-icon.png);
-=======
     background-image: url(../img/user.png);
->>>>>>> 4db04b3f3bd5887fa9bc0566e32576cab104a1e5
     background-repeat: no-repeat;
     background-position: 0 9px;
     flex-basis: 74px;
@@ -310,21 +291,13 @@ ul {
 .navigation-login-2{
     background-image: url(../img/compare.png);
     background-repeat: no-repeat;
-<<<<<<< HEAD
-    background-position: 1px 11px;
-=======
     background-position: 2px 11px;
->>>>>>> 4db04b3f3bd5887fa9bc0566e32576cab104a1e5
     flex-basis: 96px;
     text-align: end;
     margin-right: 40px;
 }
 .navigation-login-3{
-<<<<<<< HEAD
-    background-image: url(../img/cart-icon.png);
-=======
     background-image: url(../img/cart.png);
->>>>>>> 4db04b3f3bd5887fa9bc0566e32576cab104a1e5
     background-repeat: no-repeat;
     background-position: 0 9px;
     flex-basis: 86px;
@@ -596,6 +569,7 @@ ul {
 .slider-more a{
     display: block;
     position: relative;
+    width: 131px;
     top: -8px;
     left: 43px;
 }
@@ -675,11 +649,11 @@ ul {
 #product-1:checked ~ .slider-list .slider-item:nth-child(1) {
     display: block;
 }
-  
+
 #product-2:checked ~ .slider-list .slider-item:nth-child(2) {
     display: block;
 }
-  
+
 #product-3:checked ~ .slider-list .slider-item:nth-child(3) {
     display: block;
 }
